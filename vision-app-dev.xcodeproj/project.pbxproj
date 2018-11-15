@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		B5E7C82B219A818800F94CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E7C82A219A818800F94CE9 /* AppDelegate.swift */; };
-		B5E7C82D219A818800F94CE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E7C82C219A818800F94CE9 /* ViewController.swift */; };
+		B5E7C82D219A818800F94CE9 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E7C82C219A818800F94CE9 /* CameraVC.swift */; };
 		B5E7C830219A818800F94CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E7C82E219A818800F94CE9 /* Main.storyboard */; };
 		B5E7C832219A818A00F94CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E7C831219A818A00F94CE9 /* Assets.xcassets */; };
 		B5E7C835219A818A00F94CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E7C833219A818A00F94CE9 /* LaunchScreen.storyboard */; };
+		B5E7C840219A8B9E00F94CE9 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E7C83F219A8B9E00F94CE9 /* RoundedShadowView.swift */; };
+		B5E7C842219B56D600F94CE9 /* RoundedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E7C841219B56D600F94CE9 /* RoundedButtonView.swift */; };
+		B5E7C844219B573E00F94CE9 /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E7C843219B573E00F94CE9 /* RoundedShadowImageView.swift */; };
+		B5E7C846219CBB3900F94CE9 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B5E7C845219CBB3900F94CE9 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5E7C827219A818800F94CE9 /* vision-app-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-app-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E7C82A219A818800F94CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5E7C82C219A818800F94CE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5E7C82C219A818800F94CE9 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		B5E7C82F219A818800F94CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5E7C831219A818A00F94CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5E7C834219A818A00F94CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5E7C836219A818A00F94CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E7C83F219A8B9E00F94CE9 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		B5E7C841219B56D600F94CE9 /* RoundedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonView.swift; sourceTree = "<group>"; };
+		B5E7C843219B573E00F94CE9 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		B5E7C845219CBB3900F94CE9 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		B5E7C829219A818800F94CE9 /* vision-app-dev */ = {
 			isa = PBXGroup;
 			children = (
+				B5E7C83E219A83C600F94CE9 /* Resourses */,
+				B5E7C83D219A839A00F94CE9 /* View */,
+				B5E7C83C219A838400F94CE9 /* Controller */,
 				B5E7C82A219A818800F94CE9 /* AppDelegate.swift */,
-				B5E7C82C219A818800F94CE9 /* ViewController.swift */,
 				B5E7C82E219A818800F94CE9 /* Main.storyboard */,
 				B5E7C831219A818A00F94CE9 /* Assets.xcassets */,
 				B5E7C833219A818A00F94CE9 /* LaunchScreen.storyboard */,
 				B5E7C836219A818A00F94CE9 /* Info.plist */,
 			);
 			path = "vision-app-dev";
+			sourceTree = "<group>";
+		};
+		B5E7C83C219A838400F94CE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5E7C82C219A818800F94CE9 /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5E7C83D219A839A00F94CE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5E7C83F219A8B9E00F94CE9 /* RoundedShadowView.swift */,
+				B5E7C841219B56D600F94CE9 /* RoundedButtonView.swift */,
+				B5E7C843219B573E00F94CE9 /* RoundedShadowImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5E7C83E219A83C600F94CE9 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				B5E7C845219CBB3900F94CE9 /* SqueezeNet.mlmodel */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5E7C82D219A818800F94CE9 /* ViewController.swift in Sources */,
+				B5E7C82D219A818800F94CE9 /* CameraVC.swift in Sources */,
+				B5E7C846219CBB3900F94CE9 /* SqueezeNet.mlmodel in Sources */,
 				B5E7C82B219A818800F94CE9 /* AppDelegate.swift in Sources */,
+				B5E7C842219B56D600F94CE9 /* RoundedButtonView.swift in Sources */,
+				B5E7C840219A8B9E00F94CE9 /* RoundedShadowView.swift in Sources */,
+				B5E7C844219B573E00F94CE9 /* RoundedShadowImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
